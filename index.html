@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | Full Stack Consultant</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        header { position: sticky; top: 0; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 20px; }
+        nav a { text-decoration: none; color: #007bff; font-weight: bold; }
+        .hero { background: linear-gradient(to right, #007bff, #00c6ff); color: white; text-align: center; padding: 100px 20px; }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; }
+        .hero p { font-size: 1.5em; margin-bottom: 30px; }
+        .cta-button { background: #fff; color: #007bff; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2em; }
+        .about { display: flex; align-items: center; padding: 50px 20px; background: #f9f9f9; }
+        .about img { width: 200px; height: 200px; border-radius: 50%; margin-right: 20px; }
+        .about h2 { font-size: 2em; margin-bottom: 10px; }
+        .skills { padding: 50px 20px; text-align: center; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 20px; }
+        .skills-grid img { width: 50px; height: 50px; }
+        .experience { padding: 50px 20px; background: #f9f9f9; }
+        .experience-card { margin-bottom: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        .experience h3 { font-size: 1.5em; margin-bottom: 10px; }
+        .projects { padding: 50px 20px; }
+        .project-card { margin-bottom: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        .project-card img { width: 100%; height: auto; border-radius: 5px; }
+        .project-link { color: #007bff; text-decoration: none; }
+        .blog { padding: 50px 20px; background: #f9f9f9; }
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .blog article { padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        .read-more { color: #007bff; text-decoration: none; }
+        .testimonials { padding: 50px 20px; }
+        .testimonial-card { margin-bottom: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; font-style: italic; }
+        .contact { padding: 50px 20px; background: #f9f9f9; }
+        .contact form { display: flex; flex-direction: column; max-width: 600px; margin: 0 auto; }
+        .contact input, .contact textarea { margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .contact button { background: #007bff; color: white; padding: 10px; border: none; border-radius: 5px; }
+        footer { background: #333; color: white; padding: 20px; text-align: center; }
+        footer a { color: #00c6ff; margin: 0 10px; text-decoration: none; }
+        @media (max-width: 768px) {
+            .about { flex-direction: column; }
+            .about img { margin-right: 0; margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#" class="logo">Hunter Gemmer | Full Stack Consultant</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="hero">
+    <h1>Full Stack Engineering Consultant with 12+ Years of Experience</h1>
+    <p>Building Scalable Web Solutions for Fortune 100 Companies and Tech Startups</p>
+    <a href="#contact" class="cta-button">Let’s Work Together</a>
+</section>
+<section id="about" class="about">
+    <img src="profile.jpg" alt="John Doe">
+    <div>
+        <h2>About Me</h2>
+        <p>I’m a frontend-focused full stack engineering consultant with over 12 years of experience delivering high-performance web solutions. I’ve worked with Fortune 100 companies and tech startups, specializing in scalable applications using React, TypeScript, and Node.js.</p>
+    </div>
+</section>
+<section id="skills" class="skills">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-grid">
+        <div><img src="react.png" alt="React"> React</div>
+        <div><img src="typescript.png" alt="TypeScript"> TypeScript</div>
+        <div><img src="nodejs.png" alt="Node.js"> Node.js</div>
+    </div>
+</section>
+<section id="experience" class="experience">
+    <h2>Professional Experience</h2>
+    <div class="experience-card">
+        <h3>Senior Full Stack Engineer, [Fortune 100 Company], 2018–2022</h3>
+        <p>Led development of a scalable web app, improving performance by 20%.</p>
+    </div>
+</section>
+<section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-card">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Personal Web App</h3>
+        <p>A React-based dashboard for real-time data visualization.</p>
+        <a href="#" class="project-link">View Demo</a>
+    </div>
+</section>
+<section id="blog" class="blog">
+    <h2>Blog & Insights</h2>
+    <div class="blog-grid">
+        <article>
+            <img src="blog1.jpg" alt="Blog Post 1">
+            <h3>How to Build Scalable Web Apps</h3>
+            <p>Learn best practices for scalability.</p>
+            <a href="#" class="read-more">Read More</a>
+        </article>
+    </div>
+</section>
+<section id="testimonials" class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial-card">
+        <p>"John is an exceptional engineer."</p>
+        <p>— Jane Smith, CTO</p>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<footer>
+    <a href="https://linkedin.com/in/johndoe">LinkedIn</a>
+    <a href="https://github.com/johndoe">GitHub</a>
+    <p>© 2025 John Doe. All rights reserved.</p>
+</footer>
+</body>
+</html>
